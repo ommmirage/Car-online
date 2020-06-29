@@ -30,4 +30,11 @@ private:
 	FVector Velocity;
 
 	void MoveForward(float Value);
+	void MoveRight(float Value);
+
+	UPROPERTY(EditAnywhere)
+		float MaxDegreesPerSecond = 120;
+
+	float SteeringThrow;
+
 };
